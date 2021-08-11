@@ -1,38 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 .App {
+  width:100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  color: #fff;
+}
+
+.HeroMain {
+  overflow: auto;
+  background-image: url("images/hero-img.jpg");
+  height: 1024px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  font-size: 2em;
+}
+
+.Navbar button {
+  font-size: 1.5em;
+  color:rgba(255, 189, 74, 1); 
+  border: none;
+  background: none;
+}
+
+.Logo span {
+  color: rgba(255, 189, 74, 1);
+}
+
+.HeroHeader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
   text-align: center;
+  color: #FFFCE8;
+  padding: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeroParagraph {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #FFFCE8;
+  padding: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HeroLinks{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 64px;
 }
 
-.App-link {
-  color: #61dafb;
+.FirstBtn {
+  width: 300px;
+  height: 62px;
+  background: #ffbd4a;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1A1A1A;
+  border: none;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SecondBtn{
+  width: 300px;
+  height: 62px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFCE8;
+  border: 1px solid #FFFCE8;
+  border-radius: 4px;
+  background: transparent;
 }
+
+.HeroLinks button {
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.HeroLinks button:hover {
+  border: 3.5px solid #7638d8;
+}
+
+
+
+/* MEDIA QUERIES  */
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .HeroHeader {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 29px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFFCE8;
+      padding: 20px;
+     }
+     
+     .HeroParagrapgh{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 33.6px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #FFFCE8;
+      padding:20px 150px;
+     }
+
+     .HeroLinks{
+      flex-direction: row;
+  }
+  
+  
+  
+  }/*  end of media query for medium screens */
+
+
+@media only screen and (min-width: 1024px) {
+
+  .HeroHeader {
+   font-style: normal;
+   font-weight: bold;
+   font-size: 38px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #FFFCE8;
+   padding: 20px;
+  }
+  
+  .HeroParagraph{
+   font-style: normal;
+   font-weight: 600;
+   font-size: 24px;
+   line-height: 33.6px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   color: #FFFCE8;
+   padding:20px 200px;
+  }
+
+  
+    
+    }/*  end of media query for large screens  */
