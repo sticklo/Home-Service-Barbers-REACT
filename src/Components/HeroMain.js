@@ -7,7 +7,7 @@ function Navbar (){
             <div className="Header">
                 <div className="Navbar">
                     <div className="Logo">
-                        <a>H <span>S</span> B</a>
+                        <a href="#">H <span>S</span> B</a>
                     </div>
                      <div className="NavLinks">
                          <button id="HamburgerBtn">&#9776;</button>
